@@ -1,0 +1,111 @@
+<!-- Create Social media signup page with below details
+
+Full Name, Username, Password, Confirm Password, Gender(Radio Button), Phone No, Email, State (Dropdown), Agreement(Checkbox), Register(button)
+
+All the control must have input required.
+		
+Full Name->accept string, Username->alphanumeric, verify enter and confirmed password, Password-> alphanumeric with some special symbol and length must be from 6 to 10, Phone->10 digit only, Email-> validate, State->need to be selected at least one, Checkbox-> must be selected.
+
+Write JavaScript function which takes all input and validated the form
+	
+Display appropriate error message beside or top or bottom side of respective control in RED color with "*"
+	
+Use regular expression to inspect proper valid input.
+	
+Redirect the page on to Login page if all the form input has tested. -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media Sign Up</title>
+</head>
+
+<body>
+    <div class="r">
+        <div class="heading">
+            <h1>Social Media Sign Up</h1>
+        </div>
+        <div class="form">
+            <form>
+                <div class="Content">
+                    <input id="Fullname" name="Fullname" placeholder="Enter your fullname" type="text"> <br> <br>
+                </div>
+                <div class="Content">
+                    <input id="Username" name="Username" placeholder="Enter your username" type="text"> <br> <br>
+                </div>
+                <div class="Content">
+                    <input id="Phone_No" name="Phone_No" placeholder="Enter contact No" type="text"> <br> <br>
+                </div>
+
+                <div class="Content">
+                    <input id="Email" name="Email" placeholder="Enter your email" type="text"> <br> <br>
+                </div>
+
+                <div class="Content">
+                    <select name="State" id="State">
+                        <option value="">Select Your State</Source>
+                        </option>
+                        <option value="Andhra_Pradesh">Andhra Pradesh</option>
+                        <option value="Arunachal_Pradesh">Arunachal Pradesh</option>
+                        <option value="Assam">Assam</option>
+                        <option value="Bihar">Bihar</option>
+                        <option value="Chhattisgarh">Chhattisgarh</option>
+                        <option value="Goa">Goa</option>
+                        <option value="Gujarat">Gujarat</option>
+                        <option value="Haryana">Haryana</option>
+                        <option value="Himachal_Pradesh">Himachal Pradesh</option>
+                        <option value="Jharkhand">Jharkhand</option>
+                        <option value="Karnataka">Karnataka</option>
+                        <option value="Kerala">Kerala</option>
+                        <option value="Madhya_Pradesh">Madhya Pradesh</option>
+                        <option value="Maharashtra">Maharashtra</option>
+                        <option value="Manipur">Manipur</option>
+                        <option value="Meghalaya">Meghalaya</option>
+                        <option value="Mizoram">Mizoram</option>
+                        <option value="Nagaland">Nagaland</option>
+                        <option value="Odisha">Odisha</option>
+                        <option value="Punjab">Punjab</option>
+                        <option value="Rajasthan">Rajasthan</option>
+                        <option value="Sikkim">Sikkim</option>
+                        <option value="Tamil_Nadu">Tamil Nadu</option>
+                        <option value="Telangana">Telangana</option>
+                        <option value="Tripura">Tripura</option>
+                        <option value="Uttar_Pradesh">Uttar Pradesh</option>
+                        <option value="Uttarakhand">Uttarakhand</option>
+                        <option value="West_Bengal">West Bengal</option>
+                    </select> <br> <br>
+                </div>
+
+                <div class="Content">
+                    <input id="Password" name="Password" placeholder="Enter Password" type="password"> <br> <br>
+                </div>
+
+                <div class="Content">
+                    <input id="Confirm_Password" name="Confirm_Password" placeholder="re-enter Password"
+                        type="password"> <br> <br>
+                </div>
+                
+                <div class="Content gen">
+                    Male:<input class="gen" type="radio" id="male" name="Gender">
+                    Female:<input class="gen" type="radio" id="female" name="Gender"> <br><br>
+                </div>
+
+                <div class="Content">
+                    Agreement<input type="checkbox" id="Agreement" name="Agreement" value="Agreement"> <br> <br>
+                </div>
+
+                <div class="Content">
+                    <input class="submit_btn" type="submit" placeholder="Register">
+                </div>
+
+            </form>
+        </div>
+    </div>
+</body>
+<script src="date_5_7_23.js"></script>
+
+</html>
